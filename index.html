@@ -39,7 +39,7 @@
 			         <p>
 
                         <strong id="docs-internal-guid-e16e456d-bdeb-2bef-e750-f1145acc0cbf">
-                       Machine learning is the process of predicting the future based on what happened in the past. With respect to data, machine learning uses a data set which has a number of instances and attributes. Attributes describe instances. For example, if we had a data set which described a population of people, each person would be an instance and descriptions such as height, weight, age and blood pressure would be attributes. The goal of machine learning is to build a statistical model which determines the outcome of a specific unknown attribute based on the values of known attributes. For example, machine learning algorithms could be applied to build a model which could predict if a person has diabetes (unknown attribute) based on their height, weight and age (known attributes). In the context of this example and in general, machine learning gains its predictive abilities by building statistical models from past data sets (training data set) where the outcome (a person diabetic state) is known. It then leverages this power to look at new instances (people not in training date set) and the values of their known attributes (height, weight and age) to determine the result of an unknown attribute (diabetic state). The accuracy and precision of models built via. machine learning can be determined by using part of the past data, which was not used in building the model (test data set), to determine the number of times the model correctly determined the value of a predicted attribute. It is important to evaluate accuracy. Machine learning is not a silver bullet for statistical modeling. Some data sets are not 'learnable' to an acceptable level and consequently machine learning may not always be the best method of making predictions.  
+                       Machine learning is the process of predicting the future based on what happened in the past. With respect to data, machine learning uses a data set which has a number of instances and attributes. Attributes describe instances. For example, if we had a data set which described a population of people, each person would be an instance and descriptions such as height, weight, age and blood pressure would be attributes. The goal of machine learning is to build a statistical model which determines the outcome of a specific unknown attribute based on the values of known attributes. For example, machine learning algorithms could be applied to build a model which could predict if a person has diabetes (unknown attribute) based on their height, weight and age (known attributes). In the context of this example and in general, machine learning gains its predictive abilities by building statistical models from past data sets (training data set) where the outcome (a person's diabetic state) is known. It then leverages this power to look at new instances (people not in the training date set) and the values of their known attributes (height, weight and age) to determine the result of an unknown attribute (diabetic state). The accuracy and precision of models built via. machine learning can be determined by using part of the past data, which was not used in building the model (test data set), to determine the number of times the model correctly determined the value of a predicted attribute. It is important to evaluate accuracy. Machine learning is not a silver bullet for statistical modeling. Some data sets are not 'learnable' to an acceptable level and consequently machine learning may not always be the best method of making predictions.  
 
 			         </strong></p>
                 
@@ -60,7 +60,7 @@
 					    <div class="cd-container-people-info">
 					        <h2> ZeroR </h2>
                                                       			        
-                            <p style="font-size:20px"> ZeroR establishes a base line. The algorithm has near no predicitve power. The model generated from zeroR is a single rule which states, always guess the most popular choice. Applying this to predicting diabetes oneR evalutes the training data and notices that in the training data more people did not have diabetes compared to people who do. Next looking at a new instance who's diabetic state is unkown oneR guesses the most popular choice in the past and always classifies that individual as not having diabetes. <br><br> </p> 
+                            <p style="font-size:20px"> ZeroR establishes a base line. The algorithm has no predicitve power. The model generated from zeroR is a single rule which states, always guess the most popular choice. Applying this to predicting diabetes oneR evaluates the training data and notices that in the training data more people did not have diabetes compared to people who do. Next, looking at a new instance who's diabetic state is unkown, oneR guesses the most popular choice in the past and always classifies that individual as not having diabetes. <br><br> </p> 
 					    </div>
 
                     </a>
@@ -75,7 +75,7 @@
 
 					    <h2> OneR </h2>
                         
-					    <p style="font-size:20px"> OneR is a simple machine learning algorithm. OneR classifies an unkown instance based on the value of a single attribute. OneR generates a rule for classification by making many rules - one for each attribute - and testing all of the rules. Ultimately picking the rule with the lowest classification error as the best overall rule. Since oneR only uses the value of a single attribute for classification it works well in data sets where specific attrubtes have more decission making power than others. <br><br><br><br></p>
+					    <p style="font-size:20px"> OneR is a simple machine learning algorithm. OneR classifies an unkown instance based on the value of a single attribute. OneR generates a rule for classification by making many rules - one for each attribute - and testing all of the rules. Ultimately, picking the rule with the lowest classification error as the best overall rule. Since oneR only uses the value of a single attribute for classification, it works well in data sets where specific attrubtes have more decission making power than others. <br><br><br><br></p>
 					</div>
 
                     </a>
@@ -91,7 +91,7 @@
 					    
 					    <h2> C4.5 </h2>
                                                 
-					    <p style="font-size:20px">C4.5 is a decision tree building algorithm based on a top down recursive divide and conquer strategy. The algorithm uses a heuristic approach based on information gains, to determine which attributes to split on. Decision tress are an often easy to understand method of classification. C4.5 will generate a physical tree which splits on different attribute and produces a path for the possible values of different attribute. Following the tree to a branch will result in classification. <br><br><br></p>
+					    <p style="font-size:20px">C4.5 is a decision tree building algorithm based on a top down recursive divide and conquer strategy. The algorithm uses a heuristic approach based on information gains, to determine which attributes to split on. Decision tress are often an easy to understand method of classification. C4.5 will generate a physical tree which splits on different attributes and produces a path for the possible values of different attributes. Following the tree to a branch will result in classification. <br><br><br></p>
 					</div>
 
                     </a>
@@ -128,7 +128,7 @@
 
 					    <h2> Bagging </h2>
                                                 
-					    <p style="font-size:20px"> Bagging or bootstraping is designed to improve the stability and accuracy of machine learning algorithms. Bagging runs an algorithum multiple times on different splits of a training data set. The models are then combined by voting. Bagging is a very effective method for unstable models. Models such as decision trees can often change significantly each time the algorithm is rerun. In situations such as these where the model is unstable bagging helps mitigate the effects by running the algorithm many times and then combining them. <br><br><br> </p>
+					    <p style="font-size:20px"> Bagging or bootstraping is designed to improve the stability and accuracy of machine learning algorithms. Bagging runs an algorithum multiple times on different splits of a training data set. The models are then combined by voting. Bagging is a very effective method for unstable models. Models such as decision trees can often change significantly each time the algorithm is rerun. In situations such as these, where the model is unstable, bagging helps mitigate the effects by running the algorithm many times and then combining them. <br><br><br> </p>
 					</div>
 
                 </a>
@@ -144,7 +144,7 @@
 					    
 						<h2> Boosting </h2>
                         
-					    <p style="font-size:20px"> Boosting is designed to convert weak learners into strong ones. Boosting  allows the performance of previous models to influence the building of the next model. More specificly boosting builds the next model from the missclassfied instances of the previous model. By this method the algorithum targets misclassifed instances and boosts its accuracy. Boosting an algothium can strengthen the model. <br><br><br><br><br><br> </p>
+					    <p style="font-size:20px"> Boosting is designed to convert weak learners into strong ones. Boosting allows the performance of previous models to influence the building of the next model. More specifically boosting builds the next model from the missclassfied instances of the previous model. By this method the algorithum targets misclassifed instances and boosts its accuracy. Boosting an algorithum can strengthen the model. <br><br><br><br><br><br> </p>
 					</div>
 
                 </a>
@@ -169,7 +169,7 @@
                                                                         
                             <p style="font-size:20px"> Correct Classification: 59.6% <br><br>
 
-                                ZeroR establishes the base line for the other methods to be compared to. Looking at a frequency table of the training data not having diabetes was more popular compared to having diabetes. Consequently the zeroR rule operated under, while evaluting the training data set (via. 10 fold cross validation) is to always guess that the instance in question does not have diabetes. Always guessing the more popular choice gave a correct classification 59.6% of the time.
+                                ZeroR establishes the base line for the other methods to be compared to. Looking at a frequency table of the training data not having diabetes was more popular compared to having diabetes. Consequently, the zeroR rule operated under, while evaluting the training data set (via. 10 fold cross validation) is to always guess that the instance in question does not have diabetes. Always guessing the more popular choice gave a correct classification 59.6% of the time.
 
                                 <br><br><br>
 
@@ -239,7 +239,7 @@
                             
                             <br><br>
 
-                            The final product of the naive bayes classifier was a weight for each attribute in the data set. A weight which could be used to deterime the probability that an instance would be classified as either having diabetes or not. The naive bayes classifier worked the best of all of the classifiers tested. This is likely a reflection of the atributed equality in influencing the classifciation of an instance. <br><br> 
+                            The final product of the naive bayes classifier was a weight for each attribute in the data set. A weight which could be used to deterime the probability that an instance would be classified as either having diabetes or not. The naive bayes classifier worked the best of all of the classifiers tested. This is likely a reflection of the attributed equality in influencing the classifciation of an instance. <br><br> 
 
                 		</p>
 
@@ -258,7 +258,7 @@
 
                         <br><br>
 
-                        Bagging was applied to C4.5 to see if bagging could imporve the accuracy. Bagging the algorithum provided only a slight increase in accuracy. Illistrating that bagging was not very effective as the model was not particaullry unstable. Having many iterations of the model run on and then combined resulted in an only slight increase in accuracy imply that there was likely litte variastion from model to model. <br><br>
+                        Bagging was applied to C4.5 to see if bagging could imporve the accuracy. Bagging the algorithum provided only a slight increase in accuracy. Illustrating that bagging was not very effective as the model was not particularly unstable. Having many interactions of the model run on and then combined resulted in only a slight increase in accuracy implying that there was likely litte variation from model to model. <br><br>
 
                 	</p>                                                
                         
@@ -278,7 +278,7 @@
 
                             <br><br>
 
-                            Boosting was applied to C4.5 in an attempt to strenghten the learning ability of the algotimhu. Boosting resulted in almost no increase in accuracy. Even using the feed back from the previous build of each model and targeting the miss classifed instances algotihum was imporved little. This is likely tied to small size of the data set. Even targeting the missclassified instances specifclly they still could not be classified. 
+                            Boosting was applied to C4.5 in an attempt to strenghten the learning ability of the algorithum. Boosting resulted in almost no increase in accuracy. Even using the feed back from the previous build of each model and targeting the misclassified instances algorithum was improved little. This is likely tied to the small size of the data set. Even targeting the misclassified instances specifically they still could not be classified. 
 
                 		</p>
 
